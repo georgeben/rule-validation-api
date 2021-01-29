@@ -9,7 +9,8 @@
   "scripts": {
     "test": "NODE_ENV=test nyc --reporter=text --reporter=html mocha \"src/test/**/**/*.test.js\" --exit --timeout 20000 --recursive",
     "dev": "NODE_ENV=development nodemon \"src/server.js\" ",
-    "start": "NODE_ENV=production pm2-runtime start ecosystem.config.js --env production"
+    "start": "NODE_ENV=production pm2-runtime start ecosystem.config.js --env production",
+    "lint": "node_modules/.bin/eslint \"./src/**/*.js\""
   },
   "keywords": [],
   "author": "Kurobara Benjamin George",
